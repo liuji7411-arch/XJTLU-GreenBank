@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>西浦绿色循环银行 | 重塑校园生态</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    
+    <style>
+        body { font-family: 'Noto Sans SC', sans-serif; overflow-x: hidden; scroll-behavior: smooth; }
+        
+        /* 视差背景 - 替换为环保主题的高清图 */
+        .hero-bg {
+            background-image: url('https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-attachment: fixed; background-position: center; background-size: cover;
+        }
+
+        /* 渐变文字 - 调整为极光绿与科技青 */
+        .text-gradient {
+            background: linear-gradient(to right, #10b981, #0ea5e9);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* 卡片悬停特效 */
+        .hover-card { transition: all 0.4s ease; }
+        .hover-card:hover { transform: translateY(-10px); box-shadow: 0 25px 50px -12px rgba(16, 185, 129, 0.25); border-color: #34d399; }
+
+        /* 动画初始状态 */
+        .gsap-up { opacity: 0; transform: translateY(40px); }
+        .gsap-in { opacity: 0; transform: scale(0.9); }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <nav class="fixed w-full z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-black text-slate-900 tracking-tighter">XJTLU <span class="text-emerald-500">GreenBank</span></div>
+            <div class="hidden md:flex space-x-8 text-sm font-bold text-slate-600">
+                <a href="#stats" class="hover:text-emerald-600 transition">运行数据</a>
+                <a href="#modules" class="hover:text-emerald-600 transition">三大核心模块</a>
+                <a href="#advantages" class="hover:text-emerald-600 transition">五大核心优势</a>
+                <a href="#impact" class="hover:text-emerald-600 transition">社会影响力</a>
+            </div>
+            <button class="bg-emerald-500 text-white px-6 py-2 rounded-full font-bold text-sm hover:bg-emerald-600 transition transform hover:scale-105 shadow-lg shadow-emerald-500/30">立即开启循环</button>
+        </div>
+    </nav>
+
+    <header class="relative h-[100vh] flex items-center justify-center hero-bg">
+        <div class="absolute inset-0 bg-slate-900/70 backdrop-blur-[2px]"></div>
+        <div class="relative z-10 text-center px-4 max-w-5xl">
+            <div class="inline-block border border-emerald-400 text-emerald-300 px-4 py-1 rounded-full text-xs font-bold tracking-widest mb-6 hero-anim opacity-0">CIRCULAR ECONOMY IN CAMPUS</div>
+            <h1 class="text-6xl md:text-8xl font-black text-white mb-8 leading-none hero-anim opacity-0">
+                将闲置化为价值 <br> <span class="text-gradient">用数字重塑生态</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-slate-300 mb-10 hero-anim opacity-0 max-w-3xl mx-auto font-light leading-relaxed">
+                西浦绿色循环银行，将传统“旧物置换”升级为系统化、数字化、可长期运营的校园资源循环管理模式。
+            </p>
+            <div class="hero-anim opacity-0 space-x-4">
+                <a href="#modules" class="inline-block bg-white text-emerald-600 px-8 py-3 rounded-full font-bold hover:bg-slate-100 transition">探索系统</a>
+            </div>
+        </div>
+        <div class="absolute bottom-10 animate-bounce text-white/50">
+            <i class="fas fa-chevron-down text-2xl"></i>
+        </div>
+    </header>
+
+    <section id="stats" class="py-20 bg-slate-900 text-white border-b border-emerald-900/30">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center divide-y md:divide-y-0 md:divide-x divide-slate-700">
+                <div class="p-6 gsap-in">
+                    <div class="text-5xl font-bold text-emerald-400 mb-2">24/7</div>
+                    <div class="text-lg font-bold">常态化无人值守</div>
+                    <p class="text-sm text-slate-400 mt-2">依托 IoT 智能柜，打破时间与空间限制的资源流转</p>
+                </div>
+                <div class="p-6 gsap-in">
+                    <div class="text-5xl font-bold text-emerald-400 mb-2">0</div>
+                    <div class="text-lg font-bold">零现金交易</div>
+                    <p class="text-sm text-slate-400 mt-2">独创“绿币”经济系统，用积分驱动价值传递</p>
+                </div>
+                <div class="p-6 gsap-in">
+                    <div class="text-5xl font-bold text-emerald-400 mb-2">100%</div>
+                    <div class="text-lg font-bold">全链路数字化追踪</div>
+                    <p class="text-sm text-slate-400 mt-2">一物一码生成数字身份证，所有流转皆有迹可循</p>
+                </div>
+                <div class="p-6 gsap-in">
+                    <div class="text-5xl font-bold text-emerald-400 mb-2"><i class="fas fa-leaf"></i></div>
+                    <div class="text-lg font-bold">个人碳账单</div>
+                    <p class="text-sm text-slate-400 mt-2">精准量化你的每一次减碳贡献，生成专属成长图谱</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="modules" class="py-24 bg-slate-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 gsap-up">
+                <h2 class="text-4xl font-bold text-slate-900 mb-4">闭环生态的三大核心引擎</h2>
+                <p class="text-slate-500">硬件与算法交织，打造面向未来的校园可持续示范项目</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="group bg-white rounded-3xl overflow-hidden hover-card border border-slate-100 shadow-sm gsap-up">
+                    <div class="h-56 overflow-hidden relative">
+                        
+                        <img src="https://images.unsplash.com/photo-1558089687-f282ffcbc126?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover transition duration-700 group-hover:scale-110" alt="Vault">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent"></div>
+                        <div class="absolute bottom-4 left-6 text-white text-3xl font-bold"><i class="fas fa-box-open text-emerald-400 mr-2"></i>Vault</div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold mb-3 text-slate-800">资源登记与智能柜系统</h3>
+                        <p class="text-slate-600 text-sm mb-6 leading-relaxed">部署于人流密集区，学生扫码自助存取。结合 AI 视觉定级与校园二手市场均价，3秒自动生成绿币估值。一物一码标准化入库，实现严谨的分类管理。</p>
+                        <ul class="space-y-2 text-sm font-medium text-emerald-600">
+                            <li><i class="fas fa-check-circle mr-2"></i>IoT 物联网硬件赋能</li>
+                            <li><i class="fas fa-check-circle mr-2"></i>AI 图像辅助定级估价</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="group bg-white rounded-3xl overflow-hidden hover-card border border-slate-100 shadow-sm gsap-up">
+                    <div class="h-56 overflow-hidden relative">
+                        
+                        <img src="https://images.unsplash.com/photo-1616423640778-28d1b53229bd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover transition duration-700 group-hover:scale-110" alt="Exchange">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent"></div>
+                        <div class="absolute bottom-4 left-6 text-white text-3xl font-bold"><i class="fas fa-sync-alt text-sky-400 mr-2"></i>Exchange</div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold mb-3 text-slate-800">线上数字交换平台</h3>
+                        <p class="text-slate-600 text-sm mb-6 leading-relaxed">实时更新的校园闲置大集。通过算法驱动的“心愿单”实现极速匹配。用绿币代替现金，不仅能换取所需物品，更可兑换校园周边赞助商家的福利特权。</p>
+                        <ul class="space-y-2 text-sm font-medium text-sky-600">
+                            <li><i class="fas fa-check-circle mr-2"></i>绿币积分经济循环</li>
+                            <li><i class="fas fa-check-circle mr-2"></i>心愿单精准推送匹配</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="group bg-white rounded-3xl overflow-hidden hover-card border border-slate-100 shadow-sm gsap-up">
+                    <div class="h-56 overflow-hidden relative">
+                        
+                        <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover transition duration-700 group-hover:scale-110" alt="Lab">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent"></div>
+                        <div class="absolute bottom-4 left-6 text-white text-3xl font-bold"><i class="fas fa-tools text-purple-400 mr-2"></i>Lab</div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold mb-3 text-slate-800">旧物升级再造工坊</h3>
+                        <p class="text-slate-600 text-sm mb-6 leading-relaxed">针对严重破损衣物或废旧材料，建立校园专属素材基因库。提供工具并开展线下 Workshop，鼓励学生发挥创意变废为宝，高价值再造品可上架拍卖。</p>
+                        <ul class="space-y-2 text-sm font-medium text-purple-600">
+                            <li><i class="fas fa-check-circle mr-2"></i>校园素材免费基因库</li>
+                            <li><i class="fas fa-check-circle mr-2"></i>技能孵化与再造品拍卖</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="advantages" class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row gap-16 items-center">
+                <div class="md:w-1/2 gsap-up">
+                    <h2 class="text-4xl font-bold text-slate-900 mb-6">与传统置换的<span class="text-gradient">代差级跃升</span></h2>
+                    <p class="text-slate-600 mb-8 leading-relaxed">
+                        绿色循环银行之所以能成为符合大学专业性要求的可持续发展项目，在于其底层架构的五个维度设计，彻底解决了传统跳蚤市场“脏、乱、差、短”的痛点。
+                    </p>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="bg-slate-50 border border-slate-100 rounded-2xl p-5 hover:border-emerald-300 transition">
+                            <div class="w-10 h-10 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center mb-3"><i class="fas fa-layer-group"></i></div>
+                            <h4 class="font-bold text-slate-800 mb-1">01 分类管理</h4>
+                            <p class="text-xs text-slate-500">多维度矩阵化分拣，告别杂乱无章。</p>
+                        </div>
+                        <div class="bg-slate-50 border border-slate-100 rounded-2xl p-5 hover:border-sky-300 transition">
+                            <div class="w-10 h-10 rounded-full bg-sky-100 text-sky-600 flex items-center justify-center mb-3"><i class="fas fa-database"></i></div>
+                            <h4 class="font-bold text-slate-800 mb-1">02 数据记录</h4>
+                            <p class="text-xs text-slate-500">全链路数字追踪，用数据证明减碳影响力。</p>
+                        </div>
+                        <div class="bg-slate-50 border border-slate-100 rounded-2xl p-5 hover:border-amber-300 transition">
+                            <div class="w-10 h-10 rounded-full bg-amber-100 text-amber-600 flex items-center justify-center mb-3"><i class="fas fa-coins"></i></div>
+                            <h4 class="font-bold text-slate-800 mb-1">03 积分激励</h4>
+                            <p class="text-xs text-slate-500">绿币经济循环，即时正反馈激发参与热情。</p>
+                        </div>
+                        <div class="bg-slate-50 border border-slate-100 rounded-2xl p-5 hover:border-purple-300 transition">
+                            <div class="w-10 h-10 rounded-full bg-purple-100 text-purple-600 flex items-center justify-center mb-3"><i class="fas fa-infinity"></i></div>
+                            <h4 class="font-bold text-slate-800 mb-1">04 长期运营</h4>
+                            <p class="text-xs text-slate-500">依靠硬件系统，打破阵发性，实现全天候流转。</p>
+                        </div>
+                        <div class="bg-emerald-500 text-white rounded-2xl p-5 sm:col-span-2 shadow-lg shadow-emerald-500/20">
+                            <div class="flex items-center">
+                                <div class="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center mb-3 mr-4"><i class="fas fa-seedling text-white"></i></div>
+                                <div>
+                                    <h4 class="font-bold mb-1">05 教育孵化</h4>
+                                    <p class="text-xs text-emerald-50">不仅是平台，更是可持续理念的社会实践基地与环保创新孵化器。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="md:w-1/2 gsap-up">
+                    <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" class="w-full h-auto" alt="Dashboard Analysis">
+                        <div class="absolute bottom-0 w-full bg-white/90 backdrop-blur p-4 border-t border-slate-200 flex justify-around text-center">
+                            <div>
+                                <div class="text-2xl font-black text-emerald-600">320<span class="text-sm">+</span></div>
+                                <div class="text-[10px] text-slate-500 uppercase font-bold tracking-wider">每日流转件数</div>
+                            </div>
+                            <div>
+                                <div class="text-2xl font-black text-sky-600">1.2<span class="text-sm">t</span></div>
+                                <div class="text-[10px] text-slate-500 uppercase font-bold tracking-wider">月均减碳量</div>
+                            </div>
+                            <div>
+                                <div class="text-2xl font-black text-purple-600">85<span class="text-sm">%</span></div>
+                                <div class="text-[10px] text-slate-500 uppercase font-bold tracking-wider">闲置匹配率</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-900 text-white pt-16 pb-8 border-t-[6px] border-emerald-500">
+        <div class="container mx-auto px-6 text-center">
+            <div class="text-3xl font-black mb-4 tracking-tighter">XJTLU <span class="text-emerald-500">GreenBank</span></div>
+            <p class="text-slate-400 text-sm max-w-lg mx-auto mb-8">
+                用数字重塑校园生态。让每一件旧物找到新的归宿，让每一次流转成为拯救地球的具体行动。
+            </p>
+            <div class="border-t border-slate-800 pt-8 text-slate-500 text-sm">
+                &copy; 2026 西交利物浦大学 绿色循环银行项目组. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+        
+        // 首页文字依次进场
+        const tl = gsap.timeline();
+        tl.to(".hero-anim", {y:0, opacity:1, duration:1, stagger:0.2, ease:"power3.out"});
+
+        // 数据矩阵弹跳
+        gsap.utils.toArray('.gsap-in').forEach(elem => {
+            gsap.to(elem, {
+                scrollTrigger: { trigger: elem, start: "top 85%" },
+                scale: 1, opacity: 1, duration: 0.6, stagger: 0.1, ease: "back.out(1.7)"
+            });
+        });
+
+        // 卡片上浮动画
+        gsap.utils.toArray('.gsap-up').forEach(elem => {
+            gsap.to(elem, {
+                scrollTrigger: { trigger: elem, start: "top 85%" },
+                y: 0, opacity: 1, duration: 1, ease: "power3.out"
+            });
+        });
+    </script>
+</body>
+</html>
