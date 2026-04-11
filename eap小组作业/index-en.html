@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XJTLU GreenBank | Reshaping Campus Ecosystem</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        .hero-bg { background-image: url('https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?auto=format&fit=crop&w=1920&q=80'); background-attachment: fixed; background-position: center; background-size: cover; }
+        .text-gradient { background: linear-gradient(to right, #10b981, #0ea5e9); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .gsap-up { opacity: 0; transform: translateY(30px); transition: all 0.8s ease-out; }
+        .visible { opacity: 1 !important; transform: translateY(0) !important; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+    <nav class="fixed w-full z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-black text-slate-900 tracking-tighter">XJTLU <span class="text-emerald-500">GreenBank</span></div>
+            <div class="hidden md:flex space-x-8 text-sm font-bold text-slate-600">
+                <a href="#stats" class="hover:text-emerald-600 transition">Statistics</a>
+                <a href="#modules" class="hover:text-emerald-600 transition">Core Modules</a>
+                <a href="#advantages" class="hover:text-emerald-600 transition">Advantages</a>
+                <a href="#impact" class="hover:text-emerald-600 transition">Social Impact</a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <div class="bg-slate-100 p-1 rounded-full flex text-xs font-bold shadow-inner">
+                    <a href="index.html" class="text-slate-400 px-3 py-1.5 hover:text-slate-600 transition">中</a>
+                    <a href="index-en.html" class="bg-white text-emerald-600 px-3 py-1.5 rounded-full shadow-sm">EN</a>
+                </div>
+                <a href="register-en.html" class="bg-emerald-500 text-white px-5 py-2 rounded-full font-bold text-sm hover:bg-emerald-600 transition shadow-lg">Portal</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="relative h-[80vh] flex items-center justify-center hero-bg">
+        <div class="absolute inset-0 bg-slate-900/60"></div>
+        <div class="relative z-10 text-center px-4">
+            <h1 class="text-5xl md:text-7xl font-black text-white mb-6">Turn Idle into Value <br> <span class="text-gradient">Reshape Digitally</span></h1>
+            <p class="text-xl text-slate-200 max-w-2xl mx-auto mb-10">XJTLU GreenBank upgrades the traditional "flea market" into a systematic, digitalized campus resource management model.</p>
+            <a href="#modules" class="bg-white text-emerald-600 px-10 py-4 rounded-full font-bold shadow-xl hover:scale-105 transition transform">Explore Modules</a>
+        </div>
+    </header>
+
+    <section id="stats" class="py-16 bg-slate-900 text-white">
+        <div class="container mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div><div class="text-4xl font-bold text-emerald-400">24/7</div><div class="text-sm opacity-60">Smart Vaults</div></div>
+            <div><div class="text-4xl font-bold text-emerald-400">0</div><div class="text-sm opacity-60">Cashless Trading</div></div>
+            <div><div class="text-4xl font-bold text-emerald-400">100%</div><div class="text-sm opacity-60">Digital Tracking</div></div>
+            <div><div class="text-4xl font-bold text-emerald-400"><i class="fas fa-leaf"></i></div><div class="text-sm opacity-60">Carbon Footprint</div></div>
+        </div>
+    </section>
+
+    <section id="modules" class="py-24 container mx-auto px-6">
+        <h2 class="text-4xl font-black text-center mb-16">Three Core Engines of the Ecosystem</h2>
+        
+        <div class="flex flex-col md:flex-row items-center gap-12 mb-24 gsap-up">
+            <div class="md:w-1/2">
+                <span class="text-emerald-500 font-bold uppercase tracking-widest text-sm">Module 01</span>
+                <h3 class="text-3xl font-bold mt-2 mb-6 text-slate-900">Vault: Resource Registration & Smart Cabinet</h3>
+                <p class="text-slate-600 leading-relaxed mb-6">IoT cabinets deployed in libraries and dormitory areas. Through AI vision algorithms, it automatically identifies book condition and electronic device models in seconds, assigning a "Green Coin" valuation instantly.</p>
+                <a href="register-en.html" class="text-emerald-600 font-bold border-b-2 border-emerald-600 pb-1">Register Online Now →</a>
+            </div>
+            <div class="md:w-1/2 rounded-3xl overflow-hidden shadow-2xl">
+                <img src="https://images.unsplash.com/photo-1558089687-f282ffcbc126?auto=format&fit=crop&w=800&q=80" alt="Vault">
+            </div>
+        </div>
+
+        <div class="flex flex-col md:flex-row-reverse items-center gap-12 mb-24 gsap-up">
+            <div class="md:w-1/2">
+                <span class="text-sky-500 font-bold uppercase tracking-widest text-sm">Module 02</span>
+                <h3 class="text-3xl font-bold mt-2 mb-6 text-slate-900">Exchange: Digital Swap Platform</h3>
+                <p class="text-slate-600 leading-relaxed mb-6">XJTLU's exclusive "currency-free" flea market. Built-in <strong>Smart Matching Algorithms</strong> realize optimal resource matching based on user wishlists and geographical locations (e.g., Wencui, Wenxing, Wenhui).</p>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-white p-4 rounded-xl border border-slate-100 shadow-sm">
+                        <i class="fas fa-bolt text-sky-500 mb-2"></i>
+                        <h4 class="font-bold text-sm">Instant Match</h4>
+                        <p class="text-xs text-slate-500">Real-time alerts pushed to wishlist users when requested items are vaulted.</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-xl border border-slate-100 shadow-sm">
+                        <i class="fas fa-shield-alt text-sky-500 mb-2"></i>
+                        <h4 class="font-bold text-sm">Trust Passport</h4>
+                        <p class="text-xs text-slate-500">Establishing authentic campus credit profiles based on real-name verification.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="md:w-1/2 rounded-3xl overflow-hidden shadow-2xl">
+                <img src="https://images.unsplash.com/photo-1616423640778-28d1b53229bd?auto=format&fit=crop&w=800&q=80" alt="Exchange">
+            </div>
+        </div>
+
+        <div class="flex flex-col md:flex-row items-center gap-12 gsap-up">
+            <div class="md:w-1/2">
+                <span class="text-purple-500 font-bold uppercase tracking-widest text-sm">Module 03</span>
+                <h3 class="text-3xl font-bold mt-2 mb-6 text-slate-900">Lab: Upcycling Workshop</h3>
+                <p class="text-slate-600 leading-relaxed mb-6">For damaged items that cannot be directly exchanged, Lab partners with the Design School to launch the "Second Life" project. This is where campus creativity meets sustainable development.</p>
+                <ul class="space-y-4">
+                    <li class="flex items-start">
+                        <i class="fas fa-dna text-purple-400 mt-1 mr-3"></i>
+                        <div><span class="font-bold text-sm block">Material Passport</span><span class="text-xs text-slate-500">Every upcycled product can trace its raw material backstory via QR code.</span></div>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-hammer text-purple-400 mt-1 mr-3"></i>
+                        <div><span class="font-bold text-sm block">Cyberpunk Art Plan</span><span class="text-xs text-slate-500">Transforming discarded motherboards and keyboards into unique digital art installations.</span></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="md:w-1/2 rounded-3xl overflow-hidden shadow-2xl">
+                <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80" alt="Lab">
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-900 text-white py-12 text-center">
+        <p class="text-sm opacity-50">&copy; 2026 XJTLU Green Cycle Bank Project Team. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+        });
+        document.querySelectorAll('.gsap-up').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
