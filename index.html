@@ -35,87 +35,127 @@
         </div>
     </nav>
 
-    <header class="relative h-[80vh] flex items-center justify-center hero-bg">
+    <header class="relative h-[100vh] flex items-center justify-center hero-bg">
         <div class="absolute inset-0 bg-slate-900/60"></div>
-        <div class="relative z-10 text-center px-4">
-            <h1 class="text-5xl md:text-7xl font-black text-white mb-6">将闲置化为价值 <br> <span class="text-gradient">用数字重塑生态</span></h1>
-            <p class="text-xl text-slate-200 max-w-2xl mx-auto mb-10">西浦绿色循环银行，数字化校园资源管理新模式。</p>
-            <a href="#modules" class="bg-white text-emerald-600 px-10 py-4 rounded-full font-bold shadow-xl hover:scale-105 transition transform">探索三大模块</a>
+        <div class="relative z-10 text-center px-4 max-w-4xl">
+            <h1 class="text-6xl md:text-8xl font-black text-white mb-8 leading-none">将闲置化为价值 <br> <span class="text-gradient">用数字重塑生态</span></h1>
+            <p class="text-xl md:text-2xl text-slate-300 mb-10 font-light">西浦绿色循环银行，数字化、全天候的校园资源可持续管理模式。</p>
+            <div class="flex justify-center space-x-4">
+                <a href="#modules" class="bg-white text-emerald-600 px-8 py-3 rounded-full font-bold hover:bg-slate-100 transition shadow-xl">探索模块</a>
+                <a href="register.html" class="bg-emerald-500 text-white px-8 py-3 rounded-full font-bold hover:bg-emerald-600 transition shadow-xl">立即开始</a>
+            </div>
         </div>
+        <div class="absolute bottom-10 animate-bounce text-white/50"><i class="fas fa-chevron-down text-2xl"></i></div>
     </header>
 
-    <section id="stats" class="py-20 bg-slate-900 text-white border-b border-emerald-900/30">
-        <div class="container mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+    <section id="stats" class="py-20 bg-slate-900 text-white">
+        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
             <div class="gsap-up"><div class="text-5xl font-bold text-emerald-400 mb-2">24/7</div><div class="text-lg font-bold">常态化无人值守</div></div>
             <div class="gsap-up"><div class="text-5xl font-bold text-emerald-400 mb-2">0</div><div class="text-lg font-bold">零现金交易</div></div>
-            <div class="gsap-up"><div class="text-5xl font-bold text-emerald-400 mb-2">100%</div><div class="text-lg font-bold">全链路数字追踪</div></div>
-            <div class="gsap-up"><div class="text-5xl font-bold text-emerald-400 mb-2"><i class="fas fa-leaf"></i></div><div class="text-lg font-bold">个人碳账单</div></div>
+            <div class="gsap-up"><div class="text-5xl font-bold text-emerald-400 mb-2">100%</div><div class="text-lg font-bold">全链路追踪</div></div>
+            <div class="gsap-up"><div class="text-5xl font-bold text-emerald-400 mb-2"><i class="fas fa-leaf"></i></div><div class="text-lg font-bold">碳个人账单</div></div>
         </div>
     </section>
 
-    <section id="modules" class="py-24 container mx-auto px-6">
+    <section id="modules" class="py-24 container mx-auto px-6 border-b">
         <h2 class="text-4xl font-black text-center mb-16">闭环生态的三大核心引擎</h2>
         
         <div class="flex flex-col md:flex-row items-center gap-12 mb-24 gsap-up">
             <div class="md:w-1/2">
-                <span class="text-emerald-500 font-bold uppercase tracking-widest text-sm">Module 01</span>
-                <h3 class="text-3xl font-bold mt-2 mb-6 text-slate-900">Vault: 资源登记与智能柜系统</h3>
-                <p class="text-slate-600 leading-relaxed mb-6">部署于图书馆等区域。通过 AI 视觉算法自动对书籍成色、电子产品型号进行秒级鉴定并赋予“绿币”估值。</p>
-                <a href="register.html" class="text-emerald-600 font-bold border-b-2 border-emerald-600 pb-1">立即在线登记物品 →</a>
+                <span class="text-emerald-500 font-bold uppercase tracking-widest text-xs">MODULE 01</span>
+                <h3 class="text-3xl font-bold mt-2 mb-6">Vault: 资源登记与智能柜</h3>
+                <p class="text-slate-600 leading-relaxed">通过分布在校园各处的 IoT 智能柜实现闲置入库。AI 视觉算法对物品进行成色识别，3秒内下发等额“绿币”，实现完全无人化操作。</p>
             </div>
-            <div class="md:w-1/2 rounded-3xl overflow-hidden shadow-2xl">
-                <img src="https://images.unsplash.com/photo-1558089687-f282ffcbc126?auto=format&fit=crop&w=800&q=80">
-            </div>
+            <div class="md:w-1/2 rounded-3xl overflow-hidden shadow-2xl"><img src="https://images.unsplash.com/photo-1558089687-f282ffcbc126?auto=format&fit=crop&w=800&q=80"></div>
         </div>
 
         <div class="flex flex-col md:flex-row-reverse items-center gap-12 mb-24 gsap-up">
             <div class="md:w-1/2">
-                <span class="text-sky-500 font-bold uppercase tracking-widest text-sm">Module 02</span>
-                <h3 class="text-3xl font-bold mt-2 mb-6 text-slate-900">Exchange: 线上数字交换平台</h3>
-                <p class="text-slate-600 leading-relaxed mb-6">内置<strong>智能撮合算法</strong>。当物品入柜，系统秒级推送至心愿单用户。引入“信誉护照”，基于实名验证建立真实校园信用档案。</p>
-                <div class="grid grid-cols-2 gap-4">
-                    <div class="bg-white p-4 rounded-xl border border-slate-100 shadow-sm"><h4 class="font-bold text-sm text-sky-600">动态定价</h4><p class="text-xs text-slate-500">期末教材类绿币估值自动上浮 20%。</p></div>
-                    <div class="bg-white p-4 rounded-xl border border-slate-100 shadow-sm"><h4 class="font-bold text-sm text-sky-600">信誉体系</h4><p class="text-xs text-slate-500">如实投递增加信用分，恶意投递将扣分。</p></div>
-                </div>
+                <span class="text-sky-500 font-bold uppercase tracking-widest text-xs">MODULE 02</span>
+                <h3 class="text-3xl font-bold mt-2 mb-6">Exchange: 线上交换平台</h3>
+                <p class="text-slate-600 leading-relaxed">基于西浦地理位置的智能匹配算法，精准推送所需物资。引入动态定价机制，用绿币积分流转取代金钱，构建纯净的校园共享社区。</p>
             </div>
-            <div class="md:w-1/2 rounded-3xl overflow-hidden shadow-2xl">
-                <img src="https://images.unsplash.com/photo-1616423640778-28d1b53229bd?auto=format&fit=crop&w=800&q=80">
-            </div>
+            <div class="md:w-1/2 rounded-3xl overflow-hidden shadow-2xl"><img src="https://images.unsplash.com/photo-1616423640778-28d1b53229bd?auto=format&fit=crop&w=800&q=80"></div>
         </div>
 
         <div class="flex flex-col md:flex-row items-center gap-12 gsap-up">
             <div class="md:w-1/2">
-                <span class="text-purple-500 font-bold uppercase tracking-widest text-sm">Module 03</span>
-                <h3 class="text-3xl font-bold mt-2 mb-6 text-slate-900">Lab: 旧物升级再造工坊</h3>
-                <p class="text-slate-600 leading-relaxed mb-6">针对损坏品，联合西浦设计学院开启“赛博朋克艺术计划”。每件作品配有“材料身份证”，扫码可追溯其原材料来源故事。</p>
+                <span class="text-purple-500 font-bold uppercase tracking-widest text-xs">MODULE 03</span>
+                <h3 class="text-3xl font-bold mt-2 mb-6">Lab: 旧物升级再造工坊</h3>
+                <p class="text-slate-600 leading-relaxed">联手设计学院对损坏品进行 Upcycling。通过赋予每件再造品唯一的“材料身份证”，让学生参与到资源循环的最后一公里，化腐朽为艺术。</p>
             </div>
-            <div class="md:w-1/2 rounded-3xl overflow-hidden shadow-2xl">
-                <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80">
+            <div class="md:w-1/2 rounded-3xl overflow-hidden shadow-2xl"><img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80"></div>
+        </div>
+    </section>
+
+    <section id="advantages" class="py-24 bg-slate-900 text-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-black text-center mb-16 gsap-up">超越传统的系统化优势</h2>
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-8">
+                <div class="text-center gsap-up">
+                    <i class="fas fa-layer-group text-3xl text-emerald-400 mb-4"></i>
+                    <h4 class="font-bold mb-2">矩阵式管理</h4>
+                    <p class="text-xs text-slate-400">跨部门数据打通，实现全校资源一盘棋监控。</p>
+                </div>
+                <div class="text-center gsap-up">
+                    <i class="fas fa-database text-3xl text-sky-400 mb-4"></i>
+                    <h4 class="font-bold mb-2">数据全链路</h4>
+                    <p class="text-xs text-slate-400">从入库到流转再到再造，流向100%可追溯。</p>
+                </div>
+                <div class="text-center gsap-up">
+                    <i class="fas fa-coins text-3xl text-amber-400 mb-4"></i>
+                    <h4 class="font-bold mb-2">积分激励</h4>
+                    <p class="text-xs text-slate-400">独创绿币体系，量化每一份环保贡献价值。</p>
+                </div>
+                <div class="text-center gsap-up">
+                    <i class="fas fa-infinity text-3xl text-purple-400 mb-4"></i>
+                    <h4 class="font-bold mb-2">长效运营</h4>
+                    <p class="text-xs text-slate-400">告别临时摊位，构建常态化的循环基建设施。</p>
+                </div>
+                <div class="text-center gsap-up">
+                    <i class="fas fa-graduation-cap text-3xl text-green-400 mb-4"></i>
+                    <h4 class="font-bold mb-2">教育孵化</h4>
+                    <p class="text-xs text-slate-400">深度结合西浦 EAP 与设计课程，产学研一体。</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="advantages" class="py-24 bg-slate-900 text-white text-center">
-        <h2 class="text-4xl font-bold mb-12 gsap-up">超越传统的系统化优势</h2>
-        <div class="container mx-auto px-6 grid grid-cols-2 md:grid-cols-5 gap-6">
-            <div class="gsap-up"><i class="fas fa-database text-emerald-400 text-3xl mb-4"></i><p class="text-sm font-bold">数据全链路</p></div>
-            <div class="gsap-up"><i class="fas fa-coins text-emerald-400 text-3xl mb-4"></i><p class="text-sm font-bold">积分正反馈</p></div>
-            <div class="gsap-up"><i class="fas fa-infinity text-emerald-400 text-3xl mb-4"></i><p class="text-sm font-bold">全天候运营</p></div>
-            <div class="gsap-up"><i class="fas fa-seedling text-emerald-400 text-3xl mb-4"></i><p class="text-sm font-bold">教育孵化</p></div>
-            <div class="gsap-up"><i class="fas fa-layer-group text-emerald-400 text-3xl mb-4"></i><p class="text-sm font-bold">矩阵化管理</p></div>
+    <section id="impact" class="py-24 bg-white relative overflow-hidden">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 gsap-up">
+                <span class="text-emerald-500 font-bold uppercase text-xs mb-2 block tracking-widest">SOCIAL IMPACT</span>
+                <h2 class="text-4xl font-black text-slate-900">拯救地球的西浦力量</h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8 mb-16">
+                <div class="bg-emerald-500 p-10 rounded-[3rem] text-white shadow-xl gsap-up">
+                    <h3 class="text-5xl font-black mb-2">24.5吨</h3>
+                    <div class="w-12 h-1 bg-white/30 mb-4"></div>
+                    <p class="text-lg font-bold">累计减少碳排放量</p>
+                    <p class="text-sm opacity-80 mt-2">相当于种下 1,200 棵成年树木一年的吸收量。</p>
+                </div>
+                <div class="bg-sky-500 p-10 rounded-[3rem] text-white shadow-xl gsap-up">
+                    <h3 class="text-5xl font-black mb-2">12,000+</h3>
+                    <div class="w-12 h-1 bg-white/30 mb-4"></div>
+                    <p class="text-lg font-bold">成功拯救闲置物</p>
+                    <p class="text-sm opacity-80 mt-2">涵盖书籍、电子产品、服饰，延长物品生命周期。</p>
+                </div>
+                <div class="bg-slate-800 p-10 rounded-[3rem] text-white shadow-xl gsap-up">
+                    <h3 class="text-5xl font-black mb-2">8,500+</h3>
+                    <div class="w-12 h-1 bg-white/30 mb-4"></div>
+                    <p class="text-lg font-bold">活跃师生用户</p>
+                    <p class="text-sm opacity-80 mt-2">已覆盖全校超过 40% 的群体，形成环保新风尚。</p>
+                </div>
+            </div>
+            <div class="flex justify-center gap-4 text-center gsap-up">
+                <div class="bg-slate-100 px-4 py-2 rounded-lg text-xs font-bold text-slate-600 border">SDG 11 可持续城市</div>
+                <div class="bg-slate-100 px-4 py-2 rounded-lg text-xs font-bold text-slate-600 border">SDG 12 负责任生产</div>
+                <div class="bg-slate-100 px-4 py-2 rounded-lg text-xs font-bold text-slate-600 border">SDG 13 气候行动</div>
+            </div>
         </div>
     </section>
 
-    <section id="impact" class="py-24 bg-white text-center">
-        <h2 class="text-4xl font-bold mb-12 gsap-up">不只是交换，更是拯救地球</h2>
-        <div class="container mx-auto px-6 grid md:grid-cols-3 gap-8">
-            <div class="bg-emerald-500 p-8 rounded-3xl text-white shadow-xl gsap-up"><h3 class="text-4xl font-black">24.5吨</h3><p class="mt-2 opacity-80">累计减少碳排放</p></div>
-            <div class="bg-sky-500 p-8 rounded-3xl text-white shadow-xl gsap-up"><h3 class="text-4xl font-black">12,000+</h3><p class="mt-2 opacity-80">拯救闲置物品</p></div>
-            <div class="bg-slate-800 p-8 rounded-3xl text-white shadow-xl gsap-up"><h3 class="text-4xl font-black">8,500+</h3><p class="mt-2 opacity-80">活跃师生用户</p></div>
-        </div>
-    </section>
-
-    <footer class="bg-slate-900 text-white py-12 text-center text-sm opacity-50 border-t border-slate-800">
+    <footer class="bg-slate-900 text-white py-12 text-center text-sm opacity-50">
         &copy; 2026 西交利物浦大学 绿色循环银行项目组. All Rights Reserved.
     </footer>
 
