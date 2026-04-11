@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Vault 登记系统 | GreenBank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-slate-50 min-h-screen">
+    <nav class="bg-white border-b px-6 py-4 flex justify-between items-center">
+        <a href="index.html" class="text-emerald-600 font-bold flex items-center"><i class="fas fa-home mr-2"></i> 返回主页</a>
+        <div class="bg-slate-100 p-1 rounded-full flex text-xs font-bold shadow-inner">
+            <a href="register.html" class="bg-white text-emerald-600 px-3 py-1.5 rounded-full shadow-sm">中</a>
+            <a href="register-en.html" class="text-slate-400 px-3 py-1.5 hover:text-slate-600 transition">EN</a>
+        </div>
+    </nav>
+
+    <div class="max-w-2xl mx-auto mt-12 px-6">
+        <div class="bg-white rounded-3xl shadow-xl overflow-hidden p-8 border border-slate-100">
+            <h2 class="text-3xl font-black mb-6 text-slate-900">Vault 智能登记</h2>
+            <form class="space-y-6">
+                <div>
+                    <label class="block text-sm font-bold text-slate-700 mb-2">物品名称</label>
+                    <input type="text" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-emerald-500 outline-none" placeholder="输入物品全称...">
+                </div>
+                <div>
+                    <label class="block text-sm font-bold text-slate-700 mb-2">所属类别</label>
+                    <select class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-emerald-500 outline-none">
+                        <option>学术教材</option>
+                        <option>电子产品</option>
+                        <option>运动器材</option>
+                        <option>生活用具</option>
+                    </select>
+                </div>
+                <div class="p-4 bg-emerald-50 rounded-2xl flex items-center justify-between">
+                    <span class="text-emerald-700 font-bold text-sm">预估绿币收益</span>
+                    <span class="text-2xl font-black text-emerald-600">~ 25 <i class="fas fa-coins text-sm text-amber-500"></i></span>
+                </div>
+                <button type="button" class="w-full bg-slate-900 text-white font-bold py-4 rounded-xl hover:bg-emerald-500 transition shadow-lg">生成存取码</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
